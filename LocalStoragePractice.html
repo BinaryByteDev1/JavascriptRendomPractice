@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea id="textArea" cols="40" rows="10"></textarea>
+    <button>Store</button>
+    <script>
+        // const content = document.querySelectorAll("textarea");
+        // const storeData = [];
+
+        // content.forEach( (e) => {
+        //     storeData.push(e.value);
+        // });
+
+        // localStorage.setItem("Data" , JSON.stringify(storeData));
+
+        // console.log(storeData);
+
+
+
+    const btn = document.querySelector("button");
+    const notes = document.querySelectorAll("textarea");
+    const data = [];
+            
+    btn.addEventListener("click" , () =>{
+
+        notes.forEach(
+            (e) => {
+                data.push(e.value);  
+            }   
+        )
+        localStorage.setItem("Notes" , JSON.stringify(data));
+        console.log(data);
+    });
+
+
+
+    var lsData = JSON.parse(localStorage.getItem("Notes"));
+    lsData.push(notes);
+
+
+
+    </script>
+</body>
+</html>

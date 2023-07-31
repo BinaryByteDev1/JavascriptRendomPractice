@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam natus, magni nulla cumque iste consectetur dicta explicabo pariatur recusandae. Deserunt iste aspernatur itaque odit, illo similique at excepturi alias reprehenderit perspiciatis perferendis expedita consectetur aperiam a reiciendis! Corporis in aspernatur nisi et excepturi. Fugiat blanditiis quis ab est! Voluptatem delectus saepe dolor dicta tempora iste molestias rerum adipisci aliquam sunt veritatis est, consequatur, dolorem, cumque velit. Vero saepe harum sunt fugit repellat, modi, aspernatur sit numquam sequi nobis cum fugiat. Molestias harum nihil libero maiores cumque ipsam numquam impedit. Natus odio obcaecati sit voluptatibus ab porro culpa vero alias.</p>
+    <input type="text" id="color-box" placeholder="Enter the Color :- ">
+
+
+    <script>
+        let text = document.getElementById("text");
+        let input = document.getElementById("color-box");
+        input.addEventListener("input" , () => {
+            document.body.style.background = input.value;
+
+            if(input.value == "black") {
+                text.style.color = "white";
+
+            }
+            
+            else if(input.value == "white") {
+                text.style.color = "black";
+
+            }
+
+        });
+        
+    </script>
+    
+</body>
+</html>

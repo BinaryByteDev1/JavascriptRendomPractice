@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<collage>
+    <student_1>
+        <details>  
+            <first_name>Hilal Ahmad Ganie</first_name>
+            <last_name>Hilal Ahmad</last_name>
+            <address>Kupwara Kalaroos</address>
+            <qualification>Bachlor of computer</qualification>
+        </details>
+    </student_1>
+        <student_2>
+        <details>  
+            <first_name>Hilal Ahmad Ganie</first_name>
+            <last_name>Hilal Ahmad</last_name>
+            <address>Kupwara Kalaroos</address>
+            <qualification>Bachlor of computer</qualification>
+        </details>
+    </student_2>
+</collage>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <input type="text" id="item" placeholder="Enter Todos :- " autofocus>
+            <ul id="todo_box">
+
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const item = document.getElementById("item");
+        const todoBox = document.getElementById("todo_box");
+
+
+        item.addEventListener("keyup" , function(event){
+           if(event.key == "Enter"){
+                addTodo(this.value);
+                this.value = "";
+
+            localStorage.setItem("items" , this.innerText);
+           }
+        });
+
+        const addTodo = (item) => {
+            const listItem = document.createElement("li");
+            listItem.innerHTML = `
+
+                    ${item}
+                    <span>Delete</span>
+            `;
+
+            listItem.addEventListener("click" , ()=>{
+                listItem.classList.toggle("Don");
+            })
+
+            listItem.querySelector("span").addEventListener("click" , ()=>{
+                listItem.remove();
+            })
+            todoBox.appendChild(listItem);
+
+        }
+
+       
+
+       
+     
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT API</title>
+</head>
+<body>  
+   <div class="bot_container">
+    <div class="bot_inner_box">
+        <div class="search_box">
+            <textarea id="search_box" placeholder="Searching..."></textarea>
+            <button id="sendChatBtn">Search</button>
+        </div>
+    </div>
+   </div>
+  <script>
+   const charInput = document.querySelector("textarea");
+   const sendChatBtn = document.querySelector("#sendChatBtn");
+   let userMassage;
+   const API_KEY = "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"; 
+
+   const generateResponse = () => {
+        const API_URL = "https://api.openai.com/v1/chat/completions";
+        const requestOption = {
+            method : "POST",
+            headers : {
+                "Content-Type" : "application/json",
+                "Authorization" : `Bearer ${API_KEY}` 
+            }, 
+            body : JSON.stringify({
+                model : "gpt-3.5-turbo",
+                messages : [{role: "user", content: userMassage}]
+            })
+        }
+        fetch(API_KEY , requestOption).then(res => res.json()).then(data => {
+            console.log(data);
+        }).catch((error) => {
+            console.log(error);
+        })
+   }
+   const handleChat = () => {
+        userMassage = charInput.value.trim();
+
+        if(!userMassage) return;
+        generateResponse();
+   }
+   sendChatBtn.addEventListener("click" , handleChat);
+  </script> 
+</body>
+</html>

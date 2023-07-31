@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPS in JS</title>
+</head>
+<body>
+
+
+
+    <script>
+    // const person = {
+    //         name : "Hilal Ahmad",
+    //         last_name : "Hilal ",
+    //         age : 16,
+    //         fullName : function() {
+    //             console.log(this.name += this.last_name += this.age);
+    //         }
+            
+    //     };
+    //     person.fullName();
+
+
+    //     function Person(Name , Age , Qualification , Address) {
+    //         this.Name = Name;
+    //         this.Age = Age;
+    //         this.Qualification = Qualification;
+    //         this.Address = Address;
+    //         this.sayhelllo = function() {
+    //             alert("Hello...");
+                
+    //         }
+    //         this.changeAge = function (newAge) {
+    //             this.Age = newAge;
+    //         }
+        
+    //     }
+    //     let person1 = new Person("Hilal Ahmad Ganie" , 18 , "BCA" , "Kalaroos");
+    //     let person2 = new Person("Waseem Ahmad Ganie" , 18 , "BCA" , "Lolab");
+    //     let person3 = new Person("Azhar Ahmad Ganie" , 18 , "MCA" , "Kupwara");
+    //     console.log(person1);
+    //     console.log(person2);
+    //     console.log(person3);
+    //     person1.changeAge(20);
+    //     person1.sayhelllo();
+
+       
+    //     let person1 = {};
+    //     console.log(person1);
+
+    //     // let person2 = {
+    //     //     name : "Hilal",
+    //     //     age : 22
+    //     // }
+    //     // console.log(person2);
+    //     // console.log(person2.hasOwnProperty('name'));
+    //     // console.log(person2.hasOwnProperty('age'));
+    //     // console.log(person2.isPrototypeOf('name'));
+
+
+    //     function Person(n) {
+    //         this.name = n;
+
+    //     }
+    //     let person2 = new Person("Hilal Ahmad Ganie ");
+    //     console.log(person2.hasOwnProperty('name'));
+        
+
+
+        // function creature(God , S_Life) {
+        //     this.God = God;
+        //     this.S_Life = S_Life;
+        // }
+        // creature.prototype.breath = function() {
+        //     console.log("Breathing");
+        // }
+        // let creature1  = new creature("Allah!!!" , 60);
+        // let creature2  = new creature("Allah!!!" , 100);
+
+        // console.log(creature1);
+        // console.log(creature2);
+
+
+
+        // console.log(" ");
+        // console.log(" ");
+
+
+
+        // function Person(fname , lname , age) {
+        //     this.fname = fname;
+        //     this.lname = lname;
+        //     this.age = age;
+        // }
+
+        // Person.prototype.fullname = function(){
+        //         console.log(this.fname + " -- " + this.lname);
+        //     }
+
+        // Person.prototype.__proto__ = Object.create(creature.prototype);
+
+
+
+        // let person1 = new Person("Hilal Ahmad Ganie", "Hilal" , 22 );
+        // let person2 = new Person("Waseem ahmad ganie" , "waseem" , 24);
+
+        // console.log(person1);
+
+        // person1.breath();
+        // person1.breath();
+
+        // person1.fullname();
+
+        // console.log(person1.hasOwnProperty("fname"));
+        // console.log(person2.hasOwnProperty("fname"));
+
+
+    // let person1 = {}; 
+    // let person2 = {
+    //     name  : "hilal"
+    // }; 
+    // console.log(person1);
+    // console.log(person2);
+    // console.log(person2.hasOwnProperty("name"));
+    
+    // function Person(fname , lname , address , qualification){
+    //     this.fname = fname;
+    //     this.lname = lname;
+    //     this.address = address;
+    //     this.qualification = qualification;
+
+
+    // } 
+    //     Person.prototype.fullname = function() {
+    //         console.log(this.fname + this.lname);
+    //     }
+    //     Person.prototype.country = "India...";
+    //     Person.prototype.crid = function() {
+    //         console.log(this.address + " " + this.qualification)
+
+    //     }
+            
+    // let person1 = new Person("Hilal ahmad " , " Hilal " , "Kalaroos" , "BCA"); 
+    // let person2 = new Person("Waseem ahmad " , "Waseem" , "Lolab" , "MCA"); 
+
+    // console.log(person1);
+    // console.log(person2);
+
+    // person1.fullname();
+    // person2.fullname();
+    // console.log(person1.country);
+    // console.log(person2.country);
+    // person1.crid();
+    // person2.crid();
+
+    //         function Creature(Species) {
+    //             this.Species = Species;
+    //         }
+    //         Creature.prototype.God = "Allah...";
+    //         Creature.prototype.breath = () => {
+    //             console.log("Breathing...");
+    //         }
+    //         let create1 = new Creature("Allah" , "Homo_Sapaiens");
+    //         console.log(create1);
+
+
+
+
+    // function Person(fname , lname , address , qualification){
+    //     this.fname = fname;
+    //     this.lname = lname;
+    //     this.address = address;
+    //     this.qualification = qualification;
+
+    // } 
+    //     Person.prototype.fullname = function() {
+    //         console.log(this.fname + this.lname);
+    //     }
+
+    //     Person.prototype.__proto__ = Object.create(Creature.prototype);
+
+
+    //   let person1 = new Person("Hilal ahmad " , " Hilal " , "Kalaroos" , "BCA"); 
+    //   let person2 = new Person("Waseem ahmad " , "Waseem" , "Lolab" , "MCA"); 
+    // console.log(person1);
+    // console.log(person2);
+
+    // person1.breath();
+    // person2.breath();
+    // person1.fullname();
+    // person2.fullname();
+    // console.log(person1.God);
+    // console.log(person2.God);
+    // console.log(create1.God);
+
+
+    // class Parent {
+    //     constructor(name , age) {
+    //         this.name = name;
+    //         this.age = age;
+    //     } 
+    //     sayHii() {
+    //         console.log("Hii i am Object");
+    //     }  
+    //     static hello() {
+    //         console.log("Hello World...");
+    //     }
+
+    // }
+    // let parent = new Parent("Junaid Ahmad" , 45);
+    // Parent.prototype.Fathers_name = "Junaid Ahmad";
+    // Parent.prototype.occipation = "Farmer";
+
+    // class siblings {
+    //     constructor(name , age) {
+    //         this.name = name;
+    //         this.age = age;
+    //     }
+    // }
+    // siblings.prototype.__proto__ = Object.create(Parent.prototype);
+    // let son1 =  new siblings("Tom" , 12);
+    // let daughter =  new siblings("Rani" , 15);
+    // console.log(parent);
+    // console.log(son1);
+    // console.log( daughter);
+
+
+    // Parent.hello();
+
+
+    // class Parent {
+    //     constructor(fatherName , occipation){
+    //         this.fatherName = fatherName;
+    //         this.occipation = occipation;
+
+    //     }
+    // };
+    // let parent = new Parent("Fayaz Ahmad Dar" , "Driver");
+    // Parent.prototype.fatherName = parent.fatherName;
+    // Parent.prototype.occipation = parent.occipation;
+    // console.log(parent);
+
+    // class siblings {
+    //     constructor(name  , age){
+    //         this.name = name;
+    //         this.age = age;
+    //     }
+    // };
+
+    // siblings.prototype.__proto__ = Object.create(Parent.prototype);
+
+    // let son = new siblings("Tommy stru" , "16years");
+    // let daughter = new siblings("Rani stru" , "19years");
+
+    // console.log(son.name);
+    // console.log(son.age);
+    // console.log(son.fatherName);
+    // console.log(son.occipation);
+    // console.log(daughter.name);
+    // console.log(daughter.age);
+    // console.log(daughter.fatherName);
+    // console.log(son.occipation);
+
+    // class Person {
+    //     constructor(name , age){
+    //         this.name  = name;
+    //         this.age = age;
+    //     }  
+    //     sayHello() {
+    //             console.log("Hii...");
+    //         }
+    //     static hello() {
+    //         console.log("Hello...");
+    //     }
+
+    //     static qualification = "BCA and MCA";
+    // };
+
+    // let person1 = new Person("Hilal" , "17Years");
+    // person1.sayHello();
+    // Person.hello();
+    // console.log(person1);
+    // console.log(Person.qualification);
+
+
+    // class employ {
+    //     constructor(name ){
+    //         this.name = name;
+    //    }
+    //    msg(){
+    //         console.log("Hiii...");
+
+    //    }
+     
+    // }
+   
+    // let employ1 = new employ("Waseem ahmad ganie" );
+
+    // class manager extends employ{
+        
+    //     constructor(n , depart) {
+    //         super(n);
+    //         this.depart = depart;
+
+    //     }
+    //     info() {
+    //         super.msg();
+    //         console.log(this.name + " is manager of " + this.depart);
+    //     }
+
+    // }
+    // let manager1 = new manager("Hilal Ahmad"  , "web development");
+
+    // console.log(manager1);
+    // console.log(employ1);
+    // manager1.info();
+ 
+    // function sum(a ,b) {
+    //     return a + b;
+
+    // }
+    // console.log(sum(10 , 20));
+
+
+    //  let sum_a = (a ,b)  => {
+    //     return a + b;
+
+    // }
+    // console.log(sum_a(10 , 20));
+
+    // let mul = (a , b ) => a * b;
+    // console.log(mul(10 , 10));
+
+    // function double(a) {
+    //     return 5 * a;
+    // }
+    // console.log(double(10));
+
+    // let double2 = a => 10 * a;
+    // console.log(double2(10));
+
+
+    // function rendom() {
+    //     return Math.floor(Math.random() * 100) ;
+    // }
+    // console.log(rendom());
+
+
+    // let randomN = () => {
+    //     return Math.floor(Math.random() * 100);
+    // }
+    // console.log(randomN());
+
+      
+    // let randomNN = () =>  Math.floor(Math.random() * 100);
+    // console.log(randomN());
+    
+    // document.addEventListener("click" , function() {
+    //     console.log("HELLO WORLD...");
+
+    // });
+    // document.addEventListener("click" , () =>  alert("HELLO WORLD..."));
+       
+    // function advence() {
+    //     console.log("HII I AM JAVASCRIPT DEVELOPER...");
+    // }
+
+    // function feature() {
+    //     console.log("Hii Users i am Front-End Developer...");
+    // }
+  
+    // function add(callBack1) {
+
+    //     callBack1();
+    // }
+
+    // add( feature);
+    // add( advence);
+    // add(function () {
+    //     console.log("Hii Anonmous function in callback function...");
+
+    // })
+      
+
+    // let data = [2 , 3 , 4 , 5 , 6];
+
+    // let res = [];
+    // for(let i = 0; i < data.length; i++) {
+
+    //     res[i] = data[i] * 2;
+
+    // }
+    // console.log(res);
+
+
+    // //Map Function
+
+    // let data2 = [2 , 3 , 4 , 5 , 6];
+
+    // let res2 = data2.map((val) => val * 3);
+    // console.log(res2);
+
+    // function calligFun1() {
+    //     console.log("Hello CallBack function 1 ...")
+
+    // }
+    // function calligFun2() {
+    //     console.log("Hello CallBack function 2 ...")
+
+    // }    function calligFun3() {
+    //     console.log("Hello CallBack function 3 ...")
+
+    // }
+    // function call(callback){
+    //     callback();
+    // }
+    // call(calligFun2);
+
+    
+    // let data = [, 30 , 40 , 66 , 10 , 88];
+    // let result = data.sort().map((val) => {
+    //     return val + 2;
+    // });
+    // console.log(result);
+
+    
+    // let data2 = [30 , 40 , 66 , 10 , 88];
+    // data2.sort();
+    // let result2;
+    // for(let i = 0; i < data2.length; i++) {
+
+    //     result2 = data2[i] * 2;
+    //     console.log(result2);
+     
+
+    // }
+
+
+    // let data = [10 , 20 , 30 , 40 , 50];
+    // let result = data.map((val) => {
+    //     return val * 4;
+       
+    // });
+    // console.log(result);
+   
+    
+    // let data = [10 , 20 , 23 , 55 , 67 ,99 , 19];
+    // result  = data.filter((val) => {
+    //     return val > 50;
+    // });
+
+
+    // console.log(result);
+
+    // let team = [
+    //     {
+    //         name : "Hilal Ahmad.",
+    //         position : "Developer"
+
+    //     }, 
+    //     {
+    //         name : "Waseem Ahmad.",
+    //         position : "front-End"
+
+    //     }, 
+    //     {
+    //         name : "Junaid Ahmad.",
+    //         position : "Developer"
+
+    //     }, 
+
+    //     {
+    //         name : "Aamir Ahmad.",
+    //         position : "Digital Marketer"
+
+    //     }, 
+
+    // ];
+
+    // let result2 = team.filter((val) => {
+    //     return val.position == "Developer";
+    // })
+    // console.log(result2);
+
+    
+    
+
+    
+
+
+
+
+
+
+
+
+   </script>
+    
+</body>
+</html>

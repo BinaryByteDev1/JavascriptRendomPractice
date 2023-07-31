@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    padding: 10px 20px;
+}
+
+@keyframes change {
+    0%{
+        background-color: rgb(11, 196, 57);
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        background-color: orange;
+        position: relative;
+        left: 300px;
+        top: 0;
+
+
+    }
+    50%{
+        background-color: rgb(129, 25, 209);
+        position: relative;
+        left: 300px;
+        top: 300px;
+
+        
+        
+
+    }
+    75% {
+        background-color: teal;
+        position: relative;
+        left: 0px;
+        top: 300px;
+
+
+
+    }
+    100%{
+        background-color: royalblue;
+        position: relative;
+        left: 0;
+        top: 0;
+        
+    }
+}
+
+.main{
+    width: 230px;
+    height: 230px;
+    background-color: rgb(11, 10, 10);
+    animation: change 5s infinite;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    border-radius: 10px;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes move {
+    from{
+        left: -200px;
+    }
+    to{
+        left: 110%;
+    }
+    
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.truck{
+    position: fixed;
+    bottom: 0;
+    animation: move 1s 0s linear infinite;
+    left: -200px;
+}
+.truck:hover{
+    animation-play-state: paused;
+}
+.truck img{
+    animation: rotate 0.10s linear infinite;
+    width: 200px;
+    height: 200px;
+   
+}
+.truck img:hover{
+    animation-play-state: paused;
+}
